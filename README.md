@@ -149,9 +149,9 @@ Debido a la falta de datos adecuados que pudieran generarse utilizando herramien
 
 Se genera Carpeta CSV de registros insertados.
 
-## Vistas
+# Vistas
 
-En el proyecto La birra es bella  las vistas se efectuaron previo a la importación de datos, puesto que se dominaba información sobre los requerimientos necesarios para cada sector. Se diseñaron un total de 4 vistas:
+## Se diseñaron un total de 4 vistas:
 
 1. Nombre de la vista: "Vista_Usuarios_Administradores"
 
@@ -175,6 +175,24 @@ El WHERE filtra los resultados para obtener únicamente aquellos registros donde
     <img src="/img/Vista_Usuarios_Administradores.jpg">
 </div>
 
+___
+ 
+2. Nombre de la vista: "Vista_Usuarios_Nombre_J"
+
+` Descripción`  
++ Esta vista muestra todos los usuarios cuyo nombre comienza con la letra "J".
+
+` Objetivo / Datos ` 
+
++ crear una vista llamada Vista_Usuarios_Nombre_J que muestra los usuarios de la tabla Usuarios cuyos nombres comienzan con la letra "J". La vista incluye las columnas id_usuario, nombre, apellidos y email.La misma modificando La cláusula LIKE  se puede utilizar para buscar cualquiel nombre segun necesidad > 'J%'  'Y%'  'D%' etc.
+
+` Consulta sobre usuario cuyo nombre comienza con la letra "J" ` 
+
+<div aling="center">
+    <img src="/img/Vista_Usuarios_Nombre_J.jpg">
+</div>
+___
+
 
 
 
@@ -183,7 +201,7 @@ ___
 <div aling="center">
     <img src="/img/logo.png">
 </div>
-___
 
 
 ** © [DOVIS YESICA] 2024. Todos los derechos reservados.**
+___
