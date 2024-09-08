@@ -245,7 +245,7 @@ ___
 + La vista Vista_Detalle_Pedidos proporciona una visión detallada de cada pedido, incluyendo información del usuario, el rol del usuario, dirección de envío y los productos incluidos en el pedido, junto con el total de unidades vendidas y el costo total por producto.
 
 ` Objetivo / Datos ` 
-
+ 
 + El objetivo de esta vista es ofrecer un análisis integral de los pedidos, facilitando la revisión del comportamiento del cliente y las características del pedido, incluyendo el rol del usuario para posibles análisis de ventas basados en el tipo de usuario.
 + La vista Vista_Detalle_Pedidos utiliza los siguientes datos: el ID del pedido, la fecha del pedido, el nombre del usuario, los apellidos del usuario, el email del usuario, el rol del usuario, la localidad de la dirección, la calle de la dirección, el número de la dirección, el piso de la dirección, la letra de la dirección, el nombre del producto, la descripción del producto, las unidades vendidas del producto, el precio unitario del producto.
 
@@ -256,6 +256,51 @@ ___
     <img src="/img/Vista_Detalle_Pedidos.jpg">
 </div>
 
+___
+
+## FUNCIONES:
+
+Se elaboraron 2 funciones para la base de Cerveceria_la_birra_es_bella que retornan información.
+
+1. Nombre de la Función: "contar_usuarios_por_letra_inicial"
+
+` Descripción` 
+
++ La función almacenada en la base de datos diseñada para contar el número de usuarios cuyo nombre comienza con una letra específica. La función realiza una búsqueda en la columna nombre de la tabla Usuarios, verificando únicamente la primera letra de cada nombre y comparándola con la letra proporcionada como parámetro.
+
+` Objetivo` 
+
++ El objetivo principal de la función es facilitar la consulta y análisis de la base de datos al contar cuántos usuarios tienen un nombre que empieza con una Esta funcionalidad es útil para búsquedas basadas en patrones específicos de nombres.
+
+` Tipo de dato` 
+
++ Parámetro de entrada: La función recibe un parámetro de tipo CHAR(1), que representa la letra inicial a buscar en los nombres de los usuarios.
+Valor de retorno: Devuelve un valor de tipo INT, que indica el número total de usuarios cuyo nombre comienza con la letra especificada.
+
+
+<div aling="center">
+    <img src="/img/CREATE FUNCTION contar_usuarios_por_letra_inicial.jpg">
+</div>
+___
+
+2. Nombre de la Función: "localidades_con_mas_pedidos"
+
+` Descripción` 
+
++
+
+` Objetivo` 
+
++
+
+` Tipo de dato` 
+
++
+
+<div aling="center">
+    <img src="/img/">
+
+</div>
 ___
 
 <div aling="center">
