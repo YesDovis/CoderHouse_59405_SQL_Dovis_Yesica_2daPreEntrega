@@ -193,6 +193,27 @@ ___
 </div>
 ___
 
+ 
+3. Nombre de la vista: "Vista_Usuarios_Con_Compra_IPA"
+
+` Descripción`  
++ vista llamada Vista_Usuarios_Con_Compra_IPA que muestra información sobre los usuarios que han realizado compras de productos cuyo nombre contiene la palabra "IPA". La vista incluye el identificador, nombre, apellidos y email de los usuarios, así como el nombre y la descripción de los productos comprados.
+
+` Objetivo / Datos ` 
+
++ El objetivo de la vista Vista_Usuarios_Con_Compra_IPA es proporcionar una manera rápida y conveniente de consultar qué usuarios han comprado productos relacionados con "IPA". Esto es útil para analizar las preferencias de los usuarios y generar informes sobre la popularidad de productos específicos dentro de una categoría de interés, en este caso, las cervezas IPA.
+
+Datos en la Vista > id_usuario usuario_nombre usuario_apellidos  usuario_email producto_descripcion.
+
+` Consulta sobre usuario cuya compra se con la palabra ipa y datos del producto ` 
+
+<div aling="center">
+    <img src="/img/Vista_Usuarios_Con_Compra_IPA.jpg">
+</div>
+<div aling="center">
+    <img src="/img/Vista_Usuarios_Con_Compra_IPA2.jpg">
+</div>
+___
 
 
 
