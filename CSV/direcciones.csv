@@ -1,0 +1,16 @@
+id_direccion,codigo_postal,localidad,calle,numero,piso,letra
+1,1515,Palermo,Cordoba,111,1r,NULL
+2,1111,Palermo,Corrientes,123,3r,1a
+3,1515,Palermo,Arevalo,100,2o,B
+4,1616,Palermo,Ravignani,500,4o,D
+5,1717,Belgrano,Arribeños,1123,1o,A
+6,1818,Belgrano,Juramento,5025,5o,C
+7,1919,Belgrano,Cabildo,1865,2o,A
+8,2020,Belgrano,"Barrio chino",1145,1o,C
+9,2121,Almagro,Independencia,2412,3o,B
+10,5050,Almagro,Boedo,1823,1o,D
+11,1919,Almagro,Belgrano,1438,2o,A
+12,2020,Almagro,Medrano,1777,1o,C
+13,2121,Almagro,Rivadavia,2437,3o,B
+14,5050,Almagro,Colombres,1828,1o,D
+15,5050,Retiro,"Santa fe",1827,1o,D

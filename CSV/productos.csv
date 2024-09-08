@@ -1,0 +1,21 @@
+id_producto,nombre,descripcion,precio,stock
+100,"Ipa kraken","Una Cerveza con mucho lupulo",4999.99,15
+110,"Ipa Stranger","Una Cerveza con mucho lupulo",5999.99,12
+120,"Ipa Juguetes Perdidos","Una Cerveza con mucho lupulo",6999.99,17
+130,"Ipa Sanfer","Una Cerveza con mucho lupulo",6999.99,17
+140,Unthemhumtem,"Una Cerveza con mucho lupulo",6999.99,17
+150,"Red ipa Stranger","Una Cerveza con mucho lupulo",5999.99,12
+160,"Hawkins Beer","Una cerveza ficticia que representa la localidad de Hawkins",5999.99,12
+170,"Asics Gel-Kayano 27","De cuerpo medio y amargor equilibrado, con doble dryhop de lúpulos ekuanot, sincoe, amarillo y mosaic.",4999.99,15
+180,"Under Armour HOVR Phantom","Una IPA viajera, para tomar en cualquier momento y en cualquier lugar. Tiene un aroma intenso, con notas a mango, pomelo y ananá, que nos transportan a un mundo mejor.",4999.99,15
+190,"Dungeons & Dragons Ale "," Sus 7° de alcohol y elevado, aunque placentero, amargor de 65 IBU son la base ideal para que se transforme en la cerveza de culto de los cerveceros alrededor del mundo.",4999.99,15
+200,"Strange Brewing Mapachamama Neipa","Una Cerveza con mucho lupulo",5999.99,12
+210,"Strange Brewing Forma Fantasma Imperial Stout","Una Cerveza con mucho lupulo",5999.99,12
+220,"Strange Brewing Salto De Fé Neipa"," La intensidad del aroma, la cremosidad de la textura y la explosión del perfil tropical se hacen presentes en esta delicia inabarcable.",5999.99,12
+230,"Bieckert BAPA","BAPA Buenos Aires Pale Ale es una verdadera representación de la vibrante ciudad de Buenos Aires.",5999.99,12
+240,"Blest Apa","Me gusta la birra",5999.99,12
+250,"Strange Catacumbia","La hermana mayor de Cortado, por favor. Bizcocho, caramelo y café (mucho café)",5999.99,12
+260,"Mur Solo Pils Czech Pilsner"," Un perfecto ejemplo de equilibrio entre malta y lúpulo. En aroma y sabor se perciben notas a frutas de carozo, pasas, cítricos y florales.",5999.99,12
+270,"Mur  Atolondrada","Una pausa reflexiva en esta permanente y desquiciada rutina. Una cerveza color rubí, de amargor suave y cuerpo ligero.",5999.99,12
+280,"Baum Honey","Nuestra Maldita Honey es una cerveza color dorado, de cuerpo pleno con un intenso aroma y sabor a miel pura",4999.99,15
+290,"Nonstop American IPA","Resinas, frutas cítricas, frutas tropicales, como ananá, naranja, durazno, mango, limón, maracuyá, pino son algunos de los aromas y sabores que se pueden percibir en la American IPA.",4999.99,156

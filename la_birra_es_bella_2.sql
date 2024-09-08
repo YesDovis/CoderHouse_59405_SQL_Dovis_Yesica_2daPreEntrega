@@ -253,3 +253,23 @@ INSERT INTO Pedidos (id_pedido, fecha, id_usuario, id_direccion, id_tarjeta) VAL
 (13, '2023-01-12 19:27:09', 13, 13, 27),
 (14, '2023-01-12 19:27:09', 14, 15, 28);
 
+/*SELECT * FROM cerveceria_la_birra_es_bella.pedidos_productos;*/
+
+INSERT INTO Pedidos_Productos (id_pedido, id_producto, unidades, precio_venta) VALUES 
+(1, 100, 2, 4999.99),
+(2, 110, 6, 5999.99),
+(3, 120, 1, 6999.99),
+(4, 130, 2, 6999.99),
+(5, 140, 1, 6999.99),
+(6, 150, 12, 5999.99),
+(7, 160, 1, 5999.99),
+(8, 170, 5, 4999.99),
+(9, 180, 6, 4999.99),
+(10, 190, 1, 4999.999),
+(11, 200, 12, 5999.99),
+(12, 210, 1, 5999.99),
+(13, 220, 12, 5999.999),
+(14, 230, 1, 5999.99);
+
+ALTER TABLE Pedidos_Productos ADD CONSTRAINT fk_pedidos_productos_pedidos FOREIGN KEY (id_pedido) REFERENCES Pedidos(id_pedido);
+ALTER TABLE Pedidos_Productos ADD CONSTRAINT fk_pedidos_productos_productos FOREIGN KEY (id_producto) REFERENCES Productos(id_producto);

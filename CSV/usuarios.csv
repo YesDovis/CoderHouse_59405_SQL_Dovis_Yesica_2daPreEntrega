@@ -1,0 +1,16 @@
+id_usuario,nombre,apellidos,fecha_nacimiento,email,password
+1,Yesica,Gonzalez,1986-05-13,yesicagonzalez.perez@mail.com,Yesica
+2,Matias,Perez,1988-03-12,matias.perez@mail.com,Matias
+3,Pedro,Rodriguez,1995-07-01,pedro.rodriguez@mail.com,Pedro
+4,Eugenia,"Martinez Perez",1992-09-05,eugenia.martinez@mail.com,Eugenia
+5,Carlos,Gomez,1997-02-14,carlos.sanchez@mail.com,Carlos
+6,Anabel,Garcia,1991-11-23,ana.garcia@mail.com,Anabel
+7,David,Fernandez,1993-06-09,david.fernandez@mail.com,David
+8,Luis,Paredez,1989-12-30,luis.paredez@mail.com,Luis
+9,Javier,Gomez,1996-08-18,javier.gomez@mail.com,Javier
+10,Nicolas,Sanchez,1994-04-07,nicolaz.sanchez@mail.com,Nicolas
+11,Esteban,Lalala,1989-12-30,esteban.lalala@mail.com,Esteban
+12,Jimena,Gomez,1984-08-18,jimena.gomez@mail.com,Jimena
+13,Juan,Sanchez,1982-08-07,juan.sanchez@mail.com,Juan
+14,Jose,Sam,1998-05-12,jose.sam@mail.com,Jose
+15,Maria,Sam,1995-12-19,maria.sam@mail.com,Maria
