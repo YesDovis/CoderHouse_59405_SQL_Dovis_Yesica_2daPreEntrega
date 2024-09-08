@@ -5,18 +5,27 @@
 
 # Entrega Proyecto SQL Coderhouse
 
-## Primera preentrega
+## Segunda preentrega
 
 Alumna:Dovis Yesica Lorena
 
 Docente: Maximiliano Torreblanca
 
+Tutor: Cristian Ovejero
+
 Comisión: 59405 SQL   
 
 ### Introducción: Descripción de la temática de la base de datos:
 
+La Birra es Bellas es una tienda de ditribucion de cervezas artesanales, la misma busca expandirse dentro del mercado digital.
+
+### Objetivo
+
 Crear una base de datos relacionar para gestionar una tienda on line especializada en cerveza llamada "Cervecería La Birra es Bella". 
-La base de datos gestionara usuarios, roles (cliente & administrador), direcciones, tarjetas, productos y pedidos.El diseño incluye múltiples tablas que reflejan las relaciones entre los diferentes elementos.
+
+### Situación problemática
+
+Creacion de base de datos gestionara y administrara usuarios roles desde administrador/vendedor y Cliente almacenando direcciones,metodo de pago, , productos y pedidos.El diseño incluye múltiples tablas que reflejan las relaciones entre los diferentes elementos.
 
 ### Diagrama de Entidad Relación
 ___
@@ -30,8 +39,11 @@ Para implementar las relaciones descritas, se necesitarán varias tablas interme
 
 ___
 
-### Listado de Tablas (Descripcion)
+### Descripción de base de datos
+___
 
+TABLAS
+___
 `USUARIOS`  
 + Esta tabla almacena información básica sobre los usuarios.
 
@@ -131,7 +143,64 @@ Un pedido puede incluir múltiples productos, a través de la entidad "Pedidos_P
 Un producto puede ser parte de múltiples pedidos a través de la entidad "Pedidos_Productos". Esta relación también es de tipo **uno a muchos** (1
 ), donde un producto puede ser incluido en diferentes pedidos.
 
+## Vistas
 
+En el proyecto La birra es bella  las vistas se efectuaron previo a la importación de datos, puesto que se dominaba información sobre los requerimientos necesarios para cada sector. Se diseñaron un total de 4 vistas:
+
+1. Nombre de la vista: "Nombre"
+
+Descripción: Esta vista permite visualizar 
+
+Objetivo: Sirve para 
+
+Tablas/Datos:
+
+
+Ejemplo de consulta sobre un cliente en específico:
+
+(imagen de la consulta)
+
+
+2. Nombre de la vista: "Nombre"
+
+Descripción: Esta vista permite visualizar 
+
+Objetivo: Sirve para 
+
+Tablas/Datos:
+
+
+Ejemplo de consulta sobre un cliente en específico:
+
+(imagen de la consulta)
+
+
+3. Nombre de la vista: "Nombre"
+
+Descripción: Esta vista permite visualizar 
+
+Objetivo: Sirve para 
+
+Tablas/Datos:
+
+
+Ejemplo de consulta sobre un cliente en específico:
+
+(imagen de la consulta)
+
+
+4. Nombre de la vista: "Nombre"
+
+Descripción: Esta vista permite visualizar 
+
+Objetivo: Sirve para 
+
+Tablas/Datos:
+
+
+Ejemplo de consulta sobre un cliente en específico:
+
+(imagen de la consulta)
 ___
 
 <div aling="center">
