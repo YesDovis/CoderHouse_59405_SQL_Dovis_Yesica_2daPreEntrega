@@ -281,24 +281,30 @@ Valor de retorno: Devuelve un valor de tipo INT, que indica el número total de 
 <div aling="center">
     <img src="/img/CREATE FUNCTION contar_usuarios_por_letra_inicial.jpg">
 </div>
+
+*EJECUTABLE:
+
+<div aling="center">
+    <img src="/img/CALL contar_usuarios_por_letra_inicial.jpg">
+</div>
 ___
 
-2. Nombre de la Función: "localidades_con_mas_pedidos"
+2. Nombre de la Función: "localidad_con_mas_pedidos"
 
 ` Descripción` 
 
-+
++ La función busca la localidad que tiene más pedidos en la base de datos.
 
 ` Objetivo` 
 
-+
++ El objetivo es identificar la localidad con la mayor cantidad de pedidos para realizar análisis de demanda y optimización logística.
 
 ` Tipo de dato` 
 
-+
++ Valor de retorno: La función devuelve una cadena (VARCHAR(20)) que representa la localidad con más pedidos.
 
 <div aling="center">
-    <img src="/img/">
+    <img src="/img/CREATE FUNCTION localidad_con_mas_pedidos.jpg">
 
 </div>
 ___
