@@ -151,7 +151,7 @@ Se genera Carpeta CSV de registros insertados.
 
 # Vistas
 
-## Se diseñaron un total de 4 vistas:
+## Se diseñaron un total de 5 vistas:
 
 1. Nombre de la vista: "Vista_Usuarios_Administradores"
 
@@ -191,6 +191,7 @@ ___
 <div aling="center">
     <img src="/img/Vista_Usuarios_Nombre_J.jpg">
 </div>
+
 ___
 
  
@@ -205,7 +206,7 @@ ___
 
 Datos en la Vista > id_usuario usuario_nombre usuario_apellidos  usuario_email producto_descripcion.
 
-` Consulta sobre usuario cuya compra se con la palabra ipa y datos del producto ` 
+` Consulta sobre usuario cuya compra contenga la palabra ipa y datos del producto ` 
 
 <div aling="center">
     <img src="/img/Vista_Usuarios_Con_Compra_IPA.jpg">
@@ -213,9 +214,47 @@ Datos en la Vista > id_usuario usuario_nombre usuario_apellidos  usuario_email p
 <div aling="center">
     <img src="/img/Vista_Usuarios_Con_Compra_IPA2.jpg">
 </div>
+
 ___
 
 
+4. Nombre de la vista: "Vista_Suma_Productos_Vendidos"
+
+` Descripción`  
+
++ La vista Vista_Suma_Productos_Vendidos proporciona un resumen de la cantidad total de unidades vendidas para cada producto en la base de datos. Muestra el nombre, la descripción y el total de unidades vendidas de cada producto.
+
+` Objetivo / Datos ` 
+
++ El objetivo de esta vista es facilitar el análisis de las ventas de productos al consolidar la información sobre las unidades vendidas por producto, lo que ayuda a evaluar el rendimiento de cada producto en términos de ventas.
+
+
+`Resumen de la cantidad total de unidades vendidas  ` 
+
+<div aling="center">
+    <img src="/img/Vista_Suma_Productos_Vendidos.jpg">
+</div>
+
+___
+
+
+5. Nombre de la vista: "Vista_Detalle_Pedidos"
+
+` Descripción`  
+
++ La vista Vista_Detalle_Pedidos proporciona una visión detallada de cada pedido, incluyendo información del usuario, el rol del usuario, dirección de envío y los productos incluidos en el pedido, junto con el total de unidades vendidas y el costo total por producto.
+
+` Objetivo / Datos ` 
+
++ El objetivo de esta vista es ofrecer un análisis integral de los pedidos, facilitando la revisión del comportamiento del cliente y las características del pedido, incluyendo el rol del usuario para posibles análisis de ventas basados en el tipo de usuario.
++ La vista Vista_Detalle_Pedidos utiliza los siguientes datos: el ID del pedido, la fecha del pedido, el nombre del usuario, los apellidos del usuario, el email del usuario, el rol del usuario, la localidad de la dirección, la calle de la dirección, el número de la dirección, el piso de la dirección, la letra de la dirección, el nombre del producto, la descripción del producto, las unidades vendidas del producto, el precio unitario del producto.
+
+
+` Esta vista es ofrecer un análisis integral de los pedidos ` 
+
+<div aling="center">
+    <img src="/img/Vista_Detalle_Pedidos.jpg">
+</div>
 
 ___
 
