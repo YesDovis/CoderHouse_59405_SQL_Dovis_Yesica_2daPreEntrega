@@ -285,7 +285,7 @@ Valor de retorno: Devuelve un valor de tipo INT, que indica el número total de 
 *EJECUTABLE:
 
 <div aling="center">
-    <img src="/img/CALL contar_usuarios_por_letra_inicial.jpg">
+    <img src="/img/F contar_usuarios_por_letra_inicial.jpg">
 </div>
 ___
 
@@ -307,6 +307,38 @@ ___
     <img src="/img/CREATE FUNCTION localidad_con_mas_pedidos.jpg">
 
 </div>
+___
+
+
+## Procedimientos Almacenados
+
+1. Procedimientos Almacenado: "InsertarUsuarioSimple"
+
++ Descripción:
+El procedimiento almacenado InsertarUsuarioSimple permite insertar un nuevo usuario en la base de datos cerveceria_la_birra_es_bella y asignarle un rol. También devuelve el id_usuario del usuario recién insertado para su uso posterior.
+
++ Objetivo:
+Insertar un nuevo registro en la tabla Usuarios.
+Asociar el nuevo usuario con un rol en la tabla Usuarios_Roles.
+Devolver el id_usuario del usuario recién creado a través de un parámetro de salida.
+
++ Datos:
+
+Parámetros de Entrada:
+
+nombreUsuario (VARCHAR(50)) - apellidosUsuario (VARCHAR(100))
+fechaNacimiento (DATE) - emailUsuario (VARCHAR(100)) -
+passwordUsuario (VARCHAR(255))- idRol (INT)
+
+Parámetros de Salida:
+
+idUsuario (INT): ID del usuario recién insertado.
+
+<div aling="center">
+    <img src="/img/Call_InsertarUsuarioSimple.jpg">
+    <img src="/img/In&outCall_InsertarUsuarioSimple.jpg">
+</div>
+
 ___
 
 <div aling="center">
