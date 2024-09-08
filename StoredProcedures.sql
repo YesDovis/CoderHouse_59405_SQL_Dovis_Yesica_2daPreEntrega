@@ -47,6 +47,22 @@ SELECT @nuevoIdUsuario;
 
 ----------------------------------------------------------------------
 
+/*Este procedimiento toma un id_producto como entrada y devuelve los detalles del producto asociado en la tabla Productos.*/
+
+DELIMITER //
+
+CREATE PROCEDURE ObtenerDetallesProducto(IN p_id_producto INT)
+BEGIN
+    SELECT nombre, descripcion, precio, stock
+    FROM Productos
+    WHERE id_producto = p_id_producto;
+END //
+
+DELIMITER ;
+
+/* llamar al procedimiento*/
+
+CALL ObtenerDetallesProducto(150);
 
 
-
+---------------------------------------------------------------------

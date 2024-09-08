@@ -177,6 +177,7 @@ El WHERE filtra los resultados para obtener únicamente aquellos registros donde
 
 ___
  
+
 2. Nombre de la vista: "Vista_Usuarios_Nombre_J"
 
 ` Descripción`  
@@ -307,6 +308,7 @@ ___
     <img src="/img/CREATE FUNCTION localidad_con_mas_pedidos.jpg">
 
 </div>
+
 ___
 
 
@@ -339,12 +341,46 @@ idUsuario (INT): ID del usuario recién insertado.
     <img src="/img/In&outCall_InsertarUsuarioSimple.jpg">
 </div>
 
+
+
+2. Procedimientos Almacenado: "ObtenerDetallesProducto"
+
++ Descripción:
+
+Este procedimiento toma un id_producto como entrada y devuelve los detalles del producto asociado en la tabla Productos.
+
++ Objetivo:
+
+Este procedimiento es permitir la consulta de detalles específicos de un producto a partir de su identificador. Esto puede ser útil para obtener información detallada sobre productos específicos en un sistema de gestión de inventario.
+
++ Datos:
+
+Parámetros de Entrada:
+
+id_producto (INT).
+
+Parámetros de Salida:/*PRODUCTO*/
+
+nombre:  (VARCHAR).
+descripcion: (TEXT).
+precio: (DECIMAL).
+stock:  (INT).
+
+<div aling="center">
+    <img src="/img/tCall_ ObtenerDetallesProductoe.jpg">
+</div>
+
 ___
+
+
+
+___
+
 
 <div aling="center">
     <img src="/img/logo.png">
 </div>
 
-
 ** © [DOVIS YESICA] 2024. Todos los derechos reservados.**
+
 ___
