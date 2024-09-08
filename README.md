@@ -143,64 +143,41 @@ Un pedido puede incluir múltiples productos, a través de la entidad "Pedidos_P
 Un producto puede ser parte de múltiples pedidos a través de la entidad "Pedidos_Productos". Esta relación también es de tipo **uno a muchos** (1
 ), donde un producto puede ser incluido en diferentes pedidos.
 
+## INSERT
+
+Debido a la falta de datos adecuados que pudieran generarse utilizando herramientas como Mockaroo, los registros de la base de datos fueron insertados manualmente. Esta decisión se tomó porque los datos generados automáticamente no cumplían con los requisitos específicos de mi estructura de base de datos, como la coherencia en las relaciones entre las tablas y las particularidades de los tipos de datos utilizados. Por lo tanto, se realizaron inserciones directas para garantizar la integridad referencial y la correcta vinculación entre las diferentes entidades de la base de datos.
+
+Se genera Carpeta CSV de registros insertados.
+
 ## Vistas
 
 En el proyecto La birra es bella  las vistas se efectuaron previo a la importación de datos, puesto que se dominaba información sobre los requerimientos necesarios para cada sector. Se diseñaron un total de 4 vistas:
 
-1. Nombre de la vista: "Nombre"
+1. Nombre de la vista: "Vista_Usuarios_Administradores"
 
-Descripción: Esta vista permite visualizar 
+` Descripción`  
++ Esta vista obtiene la información de los usuarios y sus roles, filtrando solo aquellos que tienen asignado el rol de administrador.
 
-Objetivo: Sirve para 
+` Objetivo / Datos ` 
 
-Tablas/Datos:
-
-
-Ejemplo de consulta sobre un cliente en específico:
-
-(imagen de la consulta)
-
-
-2. Nombre de la vista: "Nombre"
-
-Descripción: Esta vista permite visualizar 
-
-Objetivo: Sirve para 
-
-Tablas/Datos:
++ Crear la vista llamada Vista_Usuarios_Administradores.
++ Especifica las columnas que queremos obtener en el resultado de la vista. En este caso, se selecciona el id_usuario, nombre, apellidos, y email de la tabla Usuarios.Como buena practica se utilizo como alias (u) para identificar  de qué tabla proviene cada campo.
++ Se realiza una unión (JOIN) entre la tabla Usuarios y la tabla Usuarios_Roles mediante la coincidencia del campo id_usuario en ambas tablas. Esto significa que estamos relacionando cada usuario con los roles que tenga asignados.
++ JOIN Roles r ON ur.id_rol = r.id_rol:
+Se realiza una segunda unión (JOIN), esta vez entre la tabla Usuarios_Roles y la tabla Roles, mediante el campo id_rol. Esto nos permite obtener el nombre del rol asignado a cada usuario.
++ WHERE r.nombre = 'rol_admin':
+El WHERE filtra los resultados para obtener únicamente aquellos registros donde el campo nombre de la tabla Roles sea igual a 'rol_admin', es decir, usuarios con el rol de administrador.
 
 
-Ejemplo de consulta sobre un cliente en específico:
+` Consulta sobre un Rol de usuario específico ` 
 
-(imagen de la consulta)
-
-
-3. Nombre de la vista: "Nombre"
-
-Descripción: Esta vista permite visualizar 
-
-Objetivo: Sirve para 
-
-Tablas/Datos:
+<div aling="center">
+    <img src="/img/Vista_Usuarios_Administradores.jpg">
+</div>
 
 
-Ejemplo de consulta sobre un cliente en específico:
-
-(imagen de la consulta)
 
 
-4. Nombre de la vista: "Nombre"
-
-Descripción: Esta vista permite visualizar 
-
-Objetivo: Sirve para 
-
-Tablas/Datos:
-
-
-Ejemplo de consulta sobre un cliente en específico:
-
-(imagen de la consulta)
 ___
 
 <div aling="center">

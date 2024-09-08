@@ -101,6 +101,9 @@ CREATE TABLE Pedidos_Productos (
     FOREIGN KEY(id_producto) REFERENCES Productos(id_producto)
 );
 
+/* ----------------------  INSERT ----------------------------------*/
+
+
 /*SELECT * FROM cerveceria_la_birra_es_bella.usuarios;*/
 
 INSERT INTO Usuarios (nombre, apellidos, fecha_nacimiento, email, password) VALUES
