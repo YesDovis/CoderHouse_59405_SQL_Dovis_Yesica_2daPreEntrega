@@ -373,6 +373,96 @@ stock:  (INT).
 ___
 
 
+## TRIGGERS
+
+### Para Se Creo una Tabla para Registrar Múltiples Triggers.
+
++ Descripción de la Tabla acciones
+La tabla acciones fue diseñada para almacenar los eventos generados por diversos triggers. Cada vez que un trigger se dispare (ya sea por la inserción de un nuevo registro, la actualización de uno existente o la eliminación de datos), se generará un registro en esta tabla.
+
++ Objetivo
+
+Ventajas de Utilizar una Tabla Única para Múltiples Triggers
+Centralización de Registros: Al guardar los registros de múltiples triggers en una misma tabla, puedes consultar fácilmente un historial centralizado de las acciones más importantes que ocurren en tu base de datos.
+
+Escalabilidad: Si en el futuro decides añadir más triggers para otras tablas o tipos de eventos (como actualizaciones o eliminaciones), no necesitarás crear nuevas tablas de logs; todos los registros continuarán almacenándose en la tabla acciones.
+
+Facilidad de Monitoreo y Auditoría: Con todos los registros almacenados en un solo lugar, es mucho más fácil revisar qué cambios se realizaron en la base de datos, cuándo y por quién (si incluyes un campo para usuario o actor).
+
+Flexibilidad en los Triggers: Cada trigger puede tener su propia lógica específica, pero los resultados siempre se almacenarán de manera uniforme en la tabla acciones, facilitando la interpretación de los registros.
+
++ Descripción estructuran de la tabla:
+
+<div aling="center">
+    <img src="/img/TABLA3.jpg">
+</div>
+
+
+SELECT * FROM cerveceria_la_birra_es_bella.acciones;
+
+###  1. Trigger: "log_tabla_productos"
+
++ Descripción:
+El trigger log_tabla_productos se activa automáticamente después de la inserción de un nuevo registro en la tabla productos. Su función principal es registrar la creación de nuevos productos en la tabla acciones, proporcionando información sobre el nombre del producto y su ID.
+
++ Objetivos:
+El objetivo del trigger es crear un registro en la tabla acciones cada vez que se inserte un nuevo producto en la tabla productos. Esto permite llevar un control detallado de los productos añadidos a la base de datos y mejorar la trazabilidad de las acciones.
+
++ Evento Disparador:
+Este trigger se dispara con el evento AFTER INSERT en la tabla productos. Es decir, cuando se inserta un nuevo producto, el trigger se ejecuta inmediatamente después de que el registro se haya insertado con éxito.
+
++ Tabla Asociada:
+productos: Es la tabla sobre la que se realiza la acción de inserción. Cada vez que se inserta un nuevo producto, se ejecuta el trigger.
+
++ Tabla Afectada:
+acciones: Es la tabla en la que se guarda el registro de la acción. El trigger inserta un nuevo registro en esta tabla con la descripción de la acción, el tipo de acción (creación de producto) y el nombre de la tabla afectada (productos).
+<div aling="center">
+    <img src="/img/TRIGGER log_tabla_productos.jpg">
+</div>
+
++ Ejemplo de inserción de datos
+<div aling="center">
+    <img src="/img/INSERT log_tabla_productos.jpg">
+</div>
+
+___
+
+###  2. Trigger: "log_tabla_usuarios"
+
+Descripción:
+El trigger log_tabla_usuarios se activa automáticamente después de que se inserte un nuevo registro en la tabla usuarios. Su función es registrar la creación de nuevos usuarios en la tabla acciones, proporcionando detalles como el nombre y el ID del usuario.
+
+Objetivos:
+El objetivo principal es crear un registro en la tabla acciones cada vez que se inserte un nuevo usuario, permitiendo un seguimiento y auditoría de las acciones relacionadas con los usuarios en el sistema.
+
+Evento Disparador:
+El trigger se dispara con el evento AFTER INSERT en la tabla usuarios, es decir, después de que se inserta un nuevo usuario en la base de datos.
+
+Tabla Asociada: usuarios.
+Tabla Afectada: acciones.
+
+
+
+
+
+___
+
+
+NOTA: Para ver los registros de la tabla Acciones.
+<div aling="center">
+    <img src="/img/Global Triggers.jpg">
+</div>
+NOTA: Para verificar que los Tiggers fueron creados adecuadamente, se pueden listar con la siguiente instrucción:
+<div aling="center">
+    <img src="/img/SHOW TRIGGERS.jpg">
+</div>
+
+
+
+
+
+
+
 
 ___
 

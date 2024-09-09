@@ -1,0 +1,13 @@
+id,accion,tipo_accion,tabla_afectada,fecha
+1,"Se eliminó un usuario de nombre: Tri con el id: 22","Eliminación de Usuario",usuarios,"2024-09-08 22:45:36"
+2,"Se eliminó un usuario de nombre: Trigger con el id: 20","Eliminación de Usuario",usuarios,"2024-09-08 22:46:35"
+3,"Se eliminó un usuario de nombre: Pepa con el id: 21","Eliminación de Usuario",usuarios,"2024-09-08 22:46:50"
+4,"Se creó un usuario nuevo de nombre: Leandra y con el id: 23","Creación de Usuario",usuarios,"2024-09-08 22:56:42"
+5,"Se creó un usuario nuevo de nombre: Cesar y con el id: 24","Creación de Usuario",usuarios,"2024-09-08 22:59:47"
+6,"Se creó un usuario nuevo de nombre: Pedro y con el id: 25","Creación de Usuario",usuarios,"2024-09-08 23:02:57"
+7,"Se creó un usuario nuevo de nombre: Hikary y con el id: 26","Creación de Usuario",usuarios,"2024-09-08 23:04:52"
+8,"Se editó el usuario con el id: 25. Nombre anterior: Pedro, Nombre nuevo: Pedro","Edición de Usuario",usuarios,"2024-09-08 23:05:57"
+9,"Se editó el usuario con el id: 26. Nombre anterior: Hikary, Nombre nuevo: Hikary","Edición de Usuario",usuarios,"2024-09-08 23:05:58"
+10,"Se eliminó un usuario de nombre: Hikary con el id: 26","Eliminación de Usuario",usuarios,"2024-09-08 23:07:23"
+11,"Se eliminó un usuario de nombre: Cesar con el id: 24","Eliminación de Usuario",usuarios,"2024-09-08 23:07:24"
+12,"Se eliminó un usuario de nombre: Pedro con el id: 25","Eliminación de Usuario",usuarios,"2024-09-08 23:07:24"
