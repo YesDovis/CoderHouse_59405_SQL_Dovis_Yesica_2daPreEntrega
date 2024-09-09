@@ -82,3 +82,5 @@ UPDATE `cerveceria_la_birra_es_bella`.`usuarios` SET `email` = 'hikary.son@mail.
 DELETE FROM `cerveceria_la_birra_es_bella`.`usuarios` WHERE (`id_usuario` = '26');
 DELETE FROM `cerveceria_la_birra_es_bella`.`usuarios` WHERE (`id_usuario` = '24');
 DELETE FROM `cerveceria_la_birra_es_bella`.`usuarios` WHERE (`id_usuario` = '25');
+
+SELECT * FROM cerveceria_la_birra_es_bella.acciones;

@@ -429,39 +429,74 @@ ___
 
 ###  2. Trigger: "log_tabla_usuarios"
 
-Descripción:
++ Descripción:
 El trigger log_tabla_usuarios se activa automáticamente después de que se inserte un nuevo registro en la tabla usuarios. Su función es registrar la creación de nuevos usuarios en la tabla acciones, proporcionando detalles como el nombre y el ID del usuario.
 
-Objetivos:
++ Objetivos:
 El objetivo principal es crear un registro en la tabla acciones cada vez que se inserte un nuevo usuario, permitiendo un seguimiento y auditoría de las acciones relacionadas con los usuarios en el sistema.
 
-Evento Disparador:
++ Evento Disparador:
 El trigger se dispara con el evento AFTER INSERT en la tabla usuarios, es decir, después de que se inserta un nuevo usuario en la base de datos.
 
-Tabla Asociada: usuarios.
-Tabla Afectada: acciones.
-
-
-
-
++ Tabla Asociada: usuarios.
++ Tabla Afectada: acciones.
 
 ___
 
+###  3. Trigger: "log_edicion_usuario"
+
++ Descripción:
+El trigger log_edicion_usuario se activa automáticamente después de la actualización de un registro en la tabla usuarios. Su función es registrar las modificaciones realizadas a los usuarios, almacenando el ID del usuario, el nombre anterior y el nuevo nombre en la tabla acciones.
+
++ Objetivos:
+El objetivo principal es crear un registro en la tabla acciones cada vez que se actualiza la información de un usuario, permitiendo el seguimiento detallado de las ediciones realizadas en la tabla usuarios.
+
++ Evento Disparador: AFTER UPDATE
++ Tabla Asociada: usuarios
++ Tabla Afectada: acciones
+
+<div aling="center">
+    <img src="/img/log_edicion_usuario.jpg">
+</div>
+
++ Ejemplo de inserción de datos
+<div aling="center">
+    <img src="/img/UPDATElog_edicion_usuario.jpg">
+</div>
+
+___
+
+###  4. Trigger: "log_eliminacion_usuario"
+
++ Descripción:
+El trigger log_eliminacion_usuario se activa automáticamente después de que se elimine un registro de la tabla usuarios. Su función es registrar en la tabla `acciones los detalles del usuario eliminado, incluyendo el nombre y el ID del usuario.
+
++ Objetivos:
+El objetivo principal de este trigger es mantener un historial detallado de las eliminaciones de usuarios en la base de datos. Permite auditar qué usuarios han sido eliminados, facilitando el seguimiento y la trazabilidad de estas acciones.
+
++ Evento Disparador: AFTER DELETE
++ Tabla Asociada: usuarios
++ Tabla Afectada: acciones
+
+
+
+
+
+
 
 NOTA: Para ver los registros de la tabla Acciones.
+
+### SELECT * FROM cerveceria_la_birra_es_bella.acciones;
+
 <div aling="center">
     <img src="/img/Global Triggers.jpg">
 </div>
+
 NOTA: Para verificar que los Tiggers fueron creados adecuadamente, se pueden listar con la siguiente instrucción:
+
 <div aling="center">
     <img src="/img/SHOW TRIGGERS.jpg">
 </div>
-
-
-
-
-
-
 
 
 ___
