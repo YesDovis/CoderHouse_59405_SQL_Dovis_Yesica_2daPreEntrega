@@ -15,20 +15,25 @@ Tutor: Cristian Ovejero
 
 Comisión: 59405 SQL   
 
-### Introducción: Descripción de la temática de la base de datos:
+___
 
-La Birra es Bellas es una tienda de ditribucion de cervezas artesanales, la misma busca expandirse dentro del mercado digital.
+
+### Introducción
+La Birra es Bella es una tienda especializada en la distribución de cervezas artesanales que busca expandirse en el mercado digital. A través de su nueva tienda en línea, la empresa pretende ofrecer una experiencia optimizada a sus clientes, facilitando la compra de productos y la gestión de pedidos. Esta expansión requiere una estructura sólida que permita administrar de manera eficiente tanto la información de los clientes como las operaciones comerciales de la tienda.
 
 ### Objetivo
-
-Crear una base de datos relacionar para gestionar una tienda on line especializada en cerveza llamada "Cervecería La Birra es Bella". 
+El objetivo principal de este proyecto es diseñar y crear una base de datos relacional que permita gestionar y administrar la tienda en línea de "Cervecería La Birra es Bella". La base de datos será fundamental para organizar y controlar aspectos clave como el manejo de usuarios, productos, ventas y servicios, asegurando una operatividad eficiente en el entorno digital.
 
 ### Situación problemática
+La creación de esta base de datos tiene como propósito gestionar y administrar usuarios junto con sus respectivos roles (administradores, vendedores y clientes). A través de esta estructura, se almacenará información crítica, como las direcciones de envío, métodos de pago (tarjetas), productos disponibles y pedidos realizados por los clientes. El diseño incluirá múltiples tablas que reflejarán las relaciones entre estos elementos, proporcionando una base sólida para el correcto funcionamiento de la tienda.
 
-Creacion de base de datos gestionara y administrara usuarios roles desde administrador/vendedor y Cliente almacenando direcciones,metodo de pago, , productos y pedidos.El diseño incluye múltiples tablas que reflejan las relaciones entre los diferentes elementos.
+Adicionalmente, se implementará un sistema de auditoría que registrará un historial detallado de todas las operaciones, incluyendo inserciones, actualizaciones y eliminaciones en las tablas principales, garantizando la trazabilidad y el control de cada cambio efectuado en el sistema. Esto permitirá mantener un registro preciso de todas las transacciones y modificaciones dentro de la plataforma, facilitando su administración y mejorando la seguridad de los datos.
+
 
 ### Diagrama de Entidad Relación
+
 ___
+
 <div aling="center">
     <img src="/img/DiagramaDER.jpg">
 </div>
@@ -40,10 +45,9 @@ Para implementar las relaciones descritas, se necesitarán varias tablas interme
 ___
 
 ### Descripción de base de datos
-___
 
 TABLAS
-___
+
 `USUARIOS`  
 + Esta tabla almacena información básica sobre los usuarios.
 
@@ -276,7 +280,7 @@ Se elaboraron 2 funciones para la base de Cerveceria_la_birra_es_bella que retor
 ` Tipo de dato` 
 
 + Parámetro de entrada: La función recibe un parámetro de tipo CHAR(1), que representa la letra inicial a buscar en los nombres de los usuarios.
-Valor de retorno: Devuelve un valor de tipo INT, que indica el número total de usuarios cuyo nombre comienza con la letra especificada.
++ Valor de retorno: Devuelve un valor de tipo INT, que indica el número total de usuarios cuyo nombre comienza con la letra especificada.
 
 
 <div aling="center">
@@ -375,7 +379,7 @@ ___
 
 ## TRIGGERS
 
-### Para Se Creo una Tabla para Registrar Múltiples Triggers.
+### Se Creo una Tabla para Almacenar/Registrar Múltiples Triggers.
 
 + Descripción de la Tabla acciones
 La tabla acciones fue diseñada para almacenar los eventos generados por diversos triggers. Cada vez que un trigger se dispare (ya sea por la inserción de un nuevo registro, la actualización de uno existente o la eliminación de datos), se generará un registro en esta tabla.
@@ -385,11 +389,16 @@ La tabla acciones fue diseñada para almacenar los eventos generados por diverso
 Ventajas de Utilizar una Tabla Única para Múltiples Triggers
 Centralización de Registros: Al guardar los registros de múltiples triggers en una misma tabla, puedes consultar fácilmente un historial centralizado de las acciones más importantes que ocurren en tu base de datos.
 
-Escalabilidad: Si en el futuro decides añadir más triggers para otras tablas o tipos de eventos (como actualizaciones o eliminaciones), no necesitarás crear nuevas tablas de logs; todos los registros continuarán almacenándose en la tabla acciones.
+Escalabilidad:No seria necesario crear nuevas tablas de logs; todos los registros continuarán almacenándose en la tabla acciones.
 
-Facilidad de Monitoreo y Auditoría: Con todos los registros almacenados en un solo lugar, es mucho más fácil revisar qué cambios se realizaron en la base de datos, cuándo y por quién (si incluyes un campo para usuario o actor).
+Facilidad de Monitoreo y Auditoría: Con todos los registros almacenados en un solo lugar, es mucho más fácil revisar qué cambios se realizaron en la base de datos, cuándo y por quién.
 
 Flexibilidad en los Triggers: Cada trigger puede tener su propia lógica específica, pero los resultados siempre se almacenarán de manera uniforme en la tabla acciones, facilitando la interpretación de los registros.
+
++ Ventajas de mantener la tabla de acciones sin relaciones:
+Independencia: Para poder agregar y eliminar filas sin que esto afecte las demás tablas.
+Simplicidad: No se necesita mantener la integridad referencial entre la tabla acciones y otras tablas, lo que hace que sea más fácil de mantener.
+Registro histórico: Si eliminas un registro de las tablas originales, aún mantendrás un registro de la acción en la tabla acciones sin necesidad de preocuparte por eliminar o actualizar registros relacionados.
 
 + Descripción estructuran de la tabla:
 
@@ -397,6 +406,7 @@ Flexibilidad en los Triggers: Cada trigger puede tener su propia lógica especí
     <img src="/img/TABLA3.jpg">
 </div>
 
++ Invocacion:
 
 SELECT * FROM cerveceria_la_birra_es_bella.acciones;
 
@@ -478,10 +488,16 @@ El objetivo principal de este trigger es mantener un historial detallado de las 
 + Tabla Asociada: usuarios
 + Tabla Afectada: acciones
 
+<div aling="center">
+    <img src="/img/log_eliminacion_usuario.jpg">
+</div>
 
++ Ejemplo de inserción de datos
+<div aling="center">
+    <img src="/img/DELETE log_eliminacion_usuario.jpg">
+</div>
 
-
-
+___
 
 
 NOTA: Para ver los registros de la tabla Acciones.
@@ -498,9 +514,21 @@ NOTA: Para verificar que los Tiggers fueron creados adecuadamente, se pueden lis
     <img src="/img/SHOW TRIGGERS.jpg">
 </div>
 
+NOTA: Diagrama ERR GLOBAL
+
+<div aling="center">
+    <img src="/img/DiagramaDER3.jpg">
+</div>
 
 ___
 
+# Modificacion Diagrama de entidad-relación (DER) - 
+
+<div aling="center">
+    <img src="/img/DiagramaDER3.jpg">
+</div>
+
+___
 
 <div aling="center">
     <img src="/img/logo.png">
